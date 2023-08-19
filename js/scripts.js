@@ -28,17 +28,17 @@ window.onload = function() {
     } else {
       if (sex === "o") {
       document.getElementById("page").removeAttribute("class");
-      } else if (age <= 25 || sex === "m") {
+      } else if (age <= 25 && sex === "m") {
       document.getElementById("chamalet").removeAttribute("class");
-      } else if (age > 25 && age <= 35 || sex === "m") {
+      } else if (age > 25 && age <= 35 && sex === "m") {
       document.getElementById("phelps").removeAttribute("class");
-      } else if (age > 35 || sex === "m") {
+      } else if (age > 35 && sex === "m") {
       document.getElementById("pitt").removeAttribute("class");
-      } else if (age <= 25 || sex === "f") {
+      } else if (age <= 25 && sex === "f") {
       document.getElementById("zendaya").removeAttribute("class");
-      } else if (age > 25 && age <= 35 || sex === "f") {
+      } else if (age > 25 && age <= 35 && sex === "f") {
       document.getElementById("pugh").removeAttribute("class");
-      } else if (age > 35 || sex === "f") {
+      } else if (age > 35 && sex === "f") {
       document.getElementById("blanchet").removeAttribute("class");
       } else {
       document.getElementById("sorry").removeAttribute("class");
